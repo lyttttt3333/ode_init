@@ -9,7 +9,7 @@ import torch
 import math
 import os
 
-
+# /lustre/fsw/portfolios/av/users/shiyil/jfxiao/s-forcing/wan_models
 def init_model(device):
     model = WanDiffusionWrapper().to(device).to(torch.float32)
     encoder = WanTextEncoder().to(device).to(torch.float32)
