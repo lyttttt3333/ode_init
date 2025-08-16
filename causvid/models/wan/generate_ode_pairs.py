@@ -74,6 +74,8 @@ def main():
 
         noisy_input = []
 
+        print("######",scheduler.timesteps)
+
         for progress_id, t in enumerate(tqdm(scheduler.timesteps)):
             timestep = t * \
                 torch.ones([1, 21], device=device, dtype=torch.float32)
