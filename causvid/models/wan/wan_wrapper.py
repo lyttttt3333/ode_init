@@ -96,7 +96,9 @@ class WanDiffusionWrapper(DiffusionModelInterface):
     def __init__(self):
         super().__init__()
 
-        self.model = WanModel.from_pretrained("wan_models/Wan2.1-T2V-1.3B/")
+        model_path = "/lustre/fsw/portfolios/av/users/shiyil/jfxiao/s-forcing/wan_models/Wan2.1-T2V-1.3B/"
+
+        self.model = WanModel.from_pretrained(model_path)
         self.model.eval()
 
         self.uniform_timestep = True
