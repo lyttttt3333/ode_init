@@ -1,1 +1,1 @@
-/lustre/fsw/portfolios/av/users/shiyil/jfxiao/AirVuz-V2-08052025/ode_latent
+torchrun --nproc_per_node 8 causvid/models/wan/generate_ode_pairs.py --output_folder  /lustre/fsw/portfolios/av/users/shiyil/jfxiao/AirVuz-V2-08052025/ode_latent --caption_path sample_dataset/mixkit_prompts.txt
